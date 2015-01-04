@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <title>Email Campaign</title>
+        <link rel="shortcut icon" href="images/icon.jpg"/>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/font-awesome.css">
+        <link rel="stylesheet" href="../css/templatemo_style.css">
+        <link rel="stylesheet" href="../css/templatemo_misc.css">
+        <link rel="stylesheet" href="../css/flexslider.css">
+        <link rel="stylesheet" href="../css/testimonails-slider.css">
+        <link rel="stylesheet" href="../css/contacts.css">
+        <link rel="stylesheet" href="../css/emails.css">
+        <script src="../js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+<style>
+	a:hover {
+		text-decoration: underline !important;
+	}
+	td.promocell p { 
+		color:#e1d8c1;
+		font-size:16px;
+		line-height:26px;
+		font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+		margin-top:0;
+		margin-bottom:0;
+		padding-top:0;
+		padding-bottom:14px;
+		font-weight:normal;
+	}
+	td.contentblock h4 {
+		color:#444444 !important;
+		font-size:16px;
+		line-height:24px;
+		font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+		margin-top:0;
+		margin-bottom:10px;
+		padding-top:0;
+		padding-bottom:0;
+		font-weight:normal;
+	}
+	td.contentblock h4 a {
+		color:#444444;
+		text-decoration:none;
+	}
+	td.contentblock p { 
+	  	color:#888888;
+		font-size:13px;
+		line-height:19px;
+		font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+		margin-top:0;
+		margin-bottom:12px;
+		padding-top:0;
+		padding-bottom:0;
+		font-weight:normal;
+	}
+	td.contentblock p a { 
+	  	color:#3ca7dd;
+		text-decoration:none;
+	}
+	@media only screen and (max-device-width: 480px) {
+	     div[class="header"] {
+	          font-size: 16px !important;
+	     }
+	     table[class="table"], td[class="cell"] {
+	          width: 300px !important;
+	     }
+		table[class="promotable"], td[class="promocell"] {
+	          width: 325px !important;
+	     }
+		td[class="footershow"] {
+	          width: 300px !important;
+	     }
+		table[class="hide"], img[class="hide"], td[class="hide"] {
+	          display: none !important;
+	     }
+	     img[class="divider"] {
+		      height: 1px !important;
+		 }
+		 td[class="logocell"] {
+			padding-top: 15px !important; 
+			padding-left: 15px !important;
+			width: 300px !important;
+		 }
+	     img[id="screenshot"] {
+	          width: 325px !important;
+	          height: 127px !important;
+	     }
+		img[class="galleryimage"] {
+			  width: 53px !important;
+	          height: 53px !important;
+		}
+		p[class="reminder"] {
+			font-size: 11px !important;
+		}
+		h4[class="secondary"] {
+			line-height: 22px !important;
+			margin-bottom: 15px !important;
+			font-size: 18px !important;
+		}
+	}
+	</style>
+</head>
+<body onload="OnLoad()">
+        
+        <script type="text/javascript">
+function OnLoad() {
+  var mydiv = document.getElementById('dashboard');
+     if(mydiv.style.display == 'block')
+          mydiv.style.display = 'none';
+       else
+          mydiv.style.display = 'block';
+    }
+     function makeVisible(id) {
+          var e = document.getElementById(id);
+           e.style.display = 'block';
+    }
+ 
+</script>
+
+            <header>
+                <div id="top-header">
+                    <div class="container">
+                        <div class="row">
+                           <div class="col-md-6">
+                                
+                            </div>
+                            <div class="col-md-6"> 
+                            <div class="button-like">
+                            <button class="medium green1 buttonSign" type="submit" onclick="window.location='/logout';">SIGN OUT
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                 
+                <div id="main-header">
+                    <div class="container1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="logo">
+                                    <a href="#"><img src="images/FinalLogo.png" title="Email Campaign" alt="Email Campaign" ></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="main-menu">
+                                    <ul>                                       
+                                     
+                                       <li><a href="/Home">DASHBOARD</a><li>                                
+                                        <li> <a href="/email">EMAILS</a><li>
+                                       <li> <a href="/contacts">CONTACTS</a><li>
+                                       <li> <a href="/templates" class="active">TEMPLATES</a><li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </header>
+<div id="main" class="full_width">
+      
+      <div id="yield">
+<div class="header_section" style="background: #D58B28">
+  
+  <h1>Welcome <%=fname%></h1>
+        
+  
+  <div style="clear: both; "></div>
+  
+</div>
+
+
+<div class="page_title">
+<h2>Classic Template</h2>
+ <img src="images/under-heading.png" alt="" >
+<p style="display: block;">Simplicity is the Best Policy</p>
+</div>
+<div class="account_section" style="width: 85%; margin: 0 auto; padding-top: 0px;">
+
+
+ <!--Template part of it -->
+ <form name="classical" action="/createEmailPageTemplate" method="post" >
+ <div id="template">
+                                   <input type="hidden" id="templateHidden" name="template">
+									<input type="hidden" id="selectedIndustry" name"industry">
+									<input type="hidden" name="TemplateType" value="2">
+       <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#e4e4e4">
+<tr>
+	<td bgcolor="#e4e4e4" width="100%">
+
+	<table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="table">
+	<tr>
+		<td width="600" class="cell">
+		
+	   	<table width="600" cellpadding="0" cellspacing="0" border="0" class="table">
+		<tr>
+			<td width="250" bgcolor="#e4e4e4" class="logocell"><img border="0" src="images/spacer.gif" width="1" height="20" class="hide"><br class="hide"><img src="images/widget-logo4.png" width="178" height="76" alt="Campaign Monitor" style="-ms-interpolation-mode:bicubic;"><br><img border="0" src="images/spacer.gif" width="1" height="10" class="hide"><br class="hide"></td>
+			<td align="right" width="350" class="hide" style="color:#a6a6a6;font-size:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;text-shadow: 0 1px 0 #ffffff;" valign="top" bgcolor="#e4e4e4"><img border="0" src="images/spacer.gif" width="1" height="63"><br><span>WIDGET&nbsp;</span><strong><span style="text-transform:uppercase;"> <currentmonthname> <currentyear></span></strong> <span>NEWSLETTER&nbsp;</span></td>
+		</tr>
+		</table>
+	
+		<img border="0" src="images/widget-hero3.png" label="Hero image" editable="true" width="600" height="253" id="screenshot">
+	
+		<table width="600" cellpadding="25" cellspacing="0" border="0" class="promotable">
+		<tr>
+			<td bgcolor="#456265" width="600" class="promocell">                      
+			 
+				<multiline label="Main feature intro"><p>Here's What's New!</p></multiline>
+				<input type="text" style="color:#45625" placeholder="Enter a one liner introduction here." style="width:600" />
+			
+			</td>
+		</tr>
+		</table>
+	
+		<img border="0" src="images/spacer.gif" width="1" height="15" class="divider"><br>
+	
+		<repeater>
+			<layout label="New feature">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td bgcolor="#85bdad" nowrap><img border="0" src="images/spacer.gif" width="5" height="1"></td>
+				<td width="100%" bgcolor="#ffffff">
+			
+					<table width="100%" cellpadding="20" cellspacing="0" border="0">
+					<tr>
+						<td bgcolor="#ffffff" class="contentblock">
+
+							<h4 class="secondary"><strong><singleline label="Title">Description</singleline></strong></h4>
+							<multiline label="Description"><p><input type="text" style="color:#45625" placeholder="Explain your Purpose here" style="width:600" />	</p></multiline>
+
+						</td>
+					</tr>
+					</table>
+			
+				</td>
+			</tr>
+			</table>  
+			<img border="0" src="images/spacer.gif" width="1" height="15" class="divider"><br>
+			</layout>
+			<layout label="Article, tip or resource">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td bgcolor="#ef3101" nowrap><img border="0" src="images/spacer.gif" width="5" height="1"></td>
+				<td width="100%" bgcolor="#ffffff">
+			
+					<table width="100%" cellpadding="20" cellspacing="0" border="0">
+					<tr>
+						<td bgcolor="#ffffff" class="contentblock">
+
+							
+							<multiline label="emailcontent"><p><input  type="textare" style="color:#45625" placeholder="Write Your Body Here" style="width:600" /></p></multiline>
+
+						</td>
+					</tr>
+					</table>
+			
+				</td>
+			</tr>
+			</table>  
+			<!--Border Image-->
+			<img border="0" src="images/under-heading" width="1" height="15" class="divider"><br>
+			</layout>
+			<layout label="Gallery highlights">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td bgcolor="#832701" nowrap><img border="0" src="images/spacer.gif" width="5" height="1"></td>
+				<td width="100%" bgcolor="#ffffff">
+
+					<table width="100%" cellpadding="20" cellspacing="0" border="0">
+					
+					</table>
+
+				</td>
+			</tr>
+			</table>
+
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td bgcolor="#832701" nowrap><img border="0" src="images/spacer.gif" width="5" height="1"></td>
+				<td bgcolor="#ffffff" nowrap><img border="0" src="images/spacer.gif" width="5" height="1"></td> 
+				<td width="100%" bgcolor="#ffffff">
+
+					<table cellpadding="5" cellspacing="0" border="0">
+					<tr>
+						<td><img border="0" src="images/gallery.png" width="107" height="107" editable="true" class="galleryimage" label="Image 1"></td>
+						<td><img border="0" src="images/gallery.png" width="107" height="107" editable="true" class="galleryimage" label="Image 2"></td>
+						<td><img border="0" src="images/gallery.png" width="107" height="107" editable="true" class="galleryimage" label="Image 3"></td>
+						<td><img border="0" src="images/gallery.png" width="107" height="107" editable="true" class="galleryimage" label="Image 4"></td>
+						<td><img border="0" src="images/gallery.png" width="107" height="107" editable="true" class="galleryimage" label="Image 5"></td>
+					</tr>
+					<tr>
+						<td><img border="0" src="images/gallery.png" width="107" height="107" editable="true" class="galleryimage" label="Image 6"></td>
+						<td><img border="0" src="images/gallery.png" width="107" height="107" editable="true" class="galleryimage" label="Image 7"></td>
+						<td><img border="0" src="images/gallery.png" width="107" height="107" editable="true" class="galleryimage" label="Image 8"></td>
+						<td><img border="0" src="images/gallery.png" width="107" height="107" editable="true" class="galleryimage" label="Image 9"></td>
+						<td><img border="0" src="images/gallery.png" width="107" height="107" editable="true" class="galleryimage" label="Image 10"></td> 
+					</tr>
+					</table>
+
+					<img border="0" src="images/spacer.gif" width="1" height="5"><br>
+
+				</td>
+			</tr>
+			</table>  
+			<img border="0" src="images/spacer.gif" width="1" height="15" class="divider"><br>
+			</layout>
+			<layout label="Pull quote">
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td bgcolor="#85bdad" nowrap><img border="0" src="images/spacer.gif" width="5" height="1"></td>
+							<td width="100%" bgcolor="#ffffff">
+						
+								<table width="100%" cellpadding="20" cellspacing="0" border="0">
+								<tr>
+									<td bgcolor="#ffffff" class="contentblock">
+			
+										<h4 class="secondary"><strong><singleline label="Pull quote"><input type="text" placeholder="Enter Regards"></singleline></strong></h4>
+			
+									</td>
+								</tr>
+								</table>
+						
+							</td>
+						</tr>
+						</table>  
+						<img border="0" src="images/spacer.gif" width="1" height="15" class="divider"><br>
+						</layout>
+		</repeater>           
+		
+		</td>
+	</tr>
+	</table>
+
+	<img border="0" src="images/spacer.gif" width="1" height="25" class="divider"><br>
+
+	<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f2f2f2">
+	<tr>
+		<td>
+		
+			<img border="0" src="images/spacer.gif" width="1" height="30"><br>
+		
+			<table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="table">
+			<tr>
+				<td width="600" nowrap bgcolor="#f2f2f2" class="cell">
+				
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="table">
+					<tr>
+						<td width="380" valign="top" class="footershow">
+						
+							<img border="0" src="images/spacer.gif" width="1" height="8"><br>  
+						
+							<p style="color:#a6a6a6;font-size:12px;font-family:Helvetica,Arial,sans-serif;margin-top:0;margin-bottom:15px;padding-top:0;padding-bottom:0;line-height:18px;" class="reminder">You’re receiving this because you’re an awesome ABC Widgets customer or subscribed via <a href="http://www.abcwidgets.com/" style="color:#a6a6a6;text-decoration:underline;">our site</a>.</p>
+							<p style="color:#c9c9c9;font-size:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;"><preferences style="color:#3ca7dd;text-decoration:none;"><strong>Edit your subscription</strong></preferences>&nbsp;&nbsp;|&nbsp;&nbsp;<unsubscribe style="color:#3ca7dd;text-decoration:none;"><strong>Unsubscribe instantly</strong></unsubscribe></p>
+						
+						</td>
+						<td align="right" width="220" style="color:#a6a6a6;font-size:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;text-shadow: 0 1px 0 #ffffff;" valign="top" class="hide">
+						
+							<table cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td><a href="http://www.flickr.com/photos/freshview"><img border="0" src="images/flickr.gif" width="42" height="32" alt="See our photos on Flickr"></a></td>
+								<td><a href="http://twitter.com/campaignmonitor"><img border="0" src="images/twitter.gif" width="42" height="32" alt="Follow us on Twitter"></a></td>
+								<td><a href="http://www.facebook.com/campaignmonitor"><img border="0" src="images/facebook.gif" width="32" height="32" alt="Visit us on Facebook"></a></td>
+							</tr>
+							</table>
+						
+							<img border="0" src="images/spacer.gif" width="1" height="10"><br><p style="color:#b3b3b3;font-size:11px;line-height:15px;font-family:Helvetica,Arial,sans-serif;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;font-weight:bold;">ABC Widgets</p><p style="color:#b3b3b3;font-size:11px;line-height:15px;font-family:Helvetica,Arial,sans-serif;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;font-weight:normal;">87 Street Avenue, California, USA</p></td>
+					</tr>
+					</table>
+				
+				</td>
+			</tr>	
+	   		</table>
+
+			<img border="0" src="images/spacer.gif" width="1" height="25"><br>
+		
+	   </td>
+	</tr>
+	</table>
+	
+	</td>
+</tr>
+</table>  	   			     	 
+<input type="submit" valign="middle" width="624" value="Send Email"  id="sendToServer" class="medium green1 buttonSign">
+                                   </div>
+                                    </form>
+                                    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+	<script>
+	$(function(){
+    $('#sendToServer').click(function () {
+        var mysave = $('#template').html();
+        $('#templateHidden').val(mysave);
+    });
+	});
+   
+ 
+	</script>
+</body>
+</html>
+

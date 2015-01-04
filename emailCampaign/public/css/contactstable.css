@@ -1,0 +1,108 @@
+#main .tableo_wrapper .tableo_search {
+    margin-top: -25px;
+    margin-bottom: 10px;
+    float: right;
+    border-radius: 0px;
+    width: 50%;
+    min-width: 182px;
+}
+#dabox .tableo, .tableo {
+    width: 100%;
+    overflow-x: scroll;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    border-spacing: 1px;
+    font-size: 1.5em;
+}
+ #dabox .tableo td, .tableo td {
+    font-size: 0.9em;
+    padding: 5px 13px;
+}
+.list_stats_td {
+    color: #6D6D6D;
+    text-align: center;
+    }
+
+ #dabox .tableo tr.odd, .tableo tr.odd {
+    background: none repeat scroll 0% 0% #F5F5F5;
+}
+#dabox .tableo a, .tableo a {
+    color: #012C4C;
+    text-decoration: none;
+    display: block;
+}
+body {
+    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+.dataTables_info {
+    padding-top: 3px;
+}
+element {
+    padding-top: 0px;
+    margin: 0px auto;
+    width: 80%;
+}
+.account_section {
+    padding: 0px;
+}
+.dataTables_wrapper {
+    position: relative;
+}
+.dataTables_wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.page_section_footer .dataTables_filter {
+    width: 100%;
+    color: #000;
+}
+.dataTables_filter {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+.dataTables_filter {
+    margin-bottom: 10px;
+}
+.dataTables_processing {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 250px;
+    margin-left: -125px;
+    border: 1px solid #DDD;
+    text-align: center;
+    color: #999;
+    font-size: 11px;
+    padding: 2px 0px;
+}
+#yield {
+    color: #6D6D6D;
+}
+#list_contacts th {
+    background: none repeat scroll 0% 0% #D58B28 !important;
+}
+.dataTables_info {
+    width: 50%;
+    float: left;
+}
+.dataTables_info {
+    padding-top: 3px;
+}
+* {
+    margin: 0px;
+    outline: medium none;
+}
+#yield {
+    color: #6D6D6D;
+}
+body {
+    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+.icon-trash:before {
+    content: "";
+}

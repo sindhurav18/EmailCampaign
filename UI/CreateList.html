@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <title>Email Campaign</title>
+        <link rel="shortcut icon" href="images/icon.jpg"/>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/templatemo_style.css">
+        <link rel="stylesheet" href="css/templatemo_misc.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/testimonails-slider.css">
+        <link rel="stylesheet" href="css/contacts.css">
+        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+    </head>
+  
+   <body onload="OnLoad()">
+        
+        <script type="text/javascript">
+
+    function makeManualVisible(id) {
+      fileUpload.style.display='none';
+             var e = document.getElementById(id);
+           e.style.display = 'block';
+    }
+    function makeFileUploadVisible(id) {
+      manual.style.display='none';
+       var e = document.getElementById(id);
+           e.style.display = 'block';
+    }
+
+</script>
+
+            <header>
+                <div id="top-header">
+                    <div class="container">
+                        <div class="row">
+                           <div class="col-md-6">
+                                
+                            </div>
+                            <div class="col-md-6"> 
+                            <div class="button-like">
+                            <button class="medium green1 buttonSign" type="submit" onclick="window.location='index.html';">SIGN OUT
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                 
+                <div id="main-header">
+                    <div class="container1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="logo">
+                                    <a href="#"><img src="images/FinalLogo.png" title="Email Campaign" alt="Email Campaign" ></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="main-menu">
+                                    <ul>                                       
+                                      <!-- <li><a href="Home.html">DASHBOARD</a></li>-->
+                                      <!-- <li><a href="#" onclick="DASHBOARD('dashboard')">DASHBOARD</a></li> 
+                                       <li><a href="#" onclick="EMAILS('emails')">EMAILS</a></li>                                      
+                                        <li><a href="#" onclick="toggle_visibility('contacts')">CONTACTS</a></li>
+                                        <li><a href="#" onclick="toggle_visibility('templates')">TEMPLATES</a></li>
+                                        <li><a href="#" onclick="toggle_visibility('signup')">Sign out</a></li>
+                                        -->
+
+                                       <li><a href="Home.html" class="active">DASHBOARD</a><li>                                
+                                        <li> <a href="Home.html">EMAILS</a><li>
+                                       <li> <a href="Home.html">CONTACTS</a><li>
+                                       <li> <a href="Home.html">TEMPLATES</a><li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </header>
+                    
+                    <div id="main" class="full_width">
+      
+      <div id="yield">
+        
+        <!-- Dialog box for notices - start -->
+<!-- Dialog box for notices - end -->
+
+
+        <div class="header_section" style="background: #D58B28">
+  
+  <h1>Create a New Contact List</h1>
+        
+  
+  <div style="clear: both; "></div>
+  
+</div>
+
+
+<div class="page_title">
+<h2>Add Contacts to your List</h2>
+<p style="display: block;">Follow the simple steps and choose which way you want to add your contacts (manually of by uploading a csv or excel file).
+</p>
+</div>
+<div class="account_section" style="width: 85%; margin: 0 auto; padding-top: 0px;">
+
+<form name= "ContactsForm" accept-charset="UTF-8" action="ListOverView.html" class="new_list" enctype="multipart/form-data" id="new_list" method="post">
+
+  <div style="margin:0;padding:0;display:inline">
+    <input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="8a5qeuSe7Zp8gFtPU605xGVFVaDVTcZhIDtJYXGvgy8=">
+  </div>
+
+  <input id="list_company_id" name="list[company_id]" type="hidden">
+  
+  <div class="my_address_field field" style="width: 94%;">
+  <div class="liststep"><span class="stepcircle yellowback">1</span></div>
+  <div id="ListNameId" class="listfield"><h3>Name of the List</h3>
+  This Name is visible to your contacts! Please choose an appropriate name.
+    <p><input id="list_name" required name="ListName" size="30" type="text"></p>
+
+    <h6 id="ListNameError" style="display:none;color:#ac0000 ">*Please provide a name for the list</h6>
+
+  </div>
+  <div class="cleared"></div>
+  </div>
+  
+  <div class="my_address_field field" style="width: 94%;">
+    <div class="liststep"><span class="stepcircle yellowback">2</span></div>
+   
+    <div id="ConnectionId" class="listfield"><h3>Connection with the Contact</h3>
+      Remind contacts why they are receiving your emails. This statement will appear on all of your messages. Complete the Sentence:<br>
+    <p><b>You're receiving this email because:</b> 
+      <input id="list_contact_conection" required name="ContactConnection" size="30" type="text"></p>
+
+      <h6 id="ConnectionError" style="display:none;color:#ac0000 ">*Please provide the connection with the contact</h6>
+
+    </div>
+    <div class="cleared"></div>
+  </div>
+
+  <div class="cleared"></div>
+ 
+  
+ <!-- <div class="field permalink_field">
+    <label for="list_permalink">Mailto Address (<span class="permalink" data-url="/check/lists?permalink=" data-id="list_permalink">xxxxxx</span>@list.emailopened.com)</label><br>
+    <input autocomplete="off" class="has_permalink" id="list_permalink" name="list[permalink]" size="30" type="text">
+    <p style="display: inline-block; font-size: 12px; ">
+      &nbsp; <span class="icon" style="font-size: 18px; "></span>
+      &nbsp;<span class="text"></span>
+    </p>
+  </div>-->
+
+  <div class="my_address_field field" style="width: 94%;">
+    <div class="liststep"><span class="stepcircle yellowback">3</span></div>
+    <div class="listfield"><h3>Upload Contacts</h3>
+    There are currently two options available to add contacts to your list. For small lists or single contacts, you can upload them manually by choosing Upload Manually below and typing one contact per line. For more complicated and larger lists, you can choose Upload File and upload a csv file or an excel file containing your contacts.  
+    <br>
+    <br>
+              <div class="my_account_field field" style="text-align: right; width: 94%; margin-left: 2%;">
+                <div class="shadow_box upload_manually_button botip" oldtitle="Click here to Add Manually" title="" data-hasqtip="true">
+                    <img src="images/addContacts.jpg" style="margin-top: -3%;">
+                    <div class="shadow_box_content">
+                      <h1>Upload Contacts Manually</h1>
+                      <p>Copy &amp; Paste contacts to upload. You can only add Name and Email fields when using manual upload.</p>
+                      <span class="fileUpload medium yellow button" onclick="makeManualVisible('manual')">Add Contacts Manually</span>
+                    </div>
+                    <div class="cleared"></div>
+                </div>
+                <div class="shadow_box upload_csv_button botip" oldtitle="Click here to Upload" title="" data-hasqtip="true">
+                  <img src="images/uploadFile.jpg" style="margin-top: -3%;">
+                  <div class="shadow_box_content">
+                    <h1>Upload Contacts From File</h1>
+                    <p>Upload a CSV, XLS or XLSX file of your contacts. You can choose which fields to be uploaded.</p>
+                    <span class="fileUpload medium yellow button" onclick="makeFileUploadVisible('fileUpload')">Upload File</span>
+                  </div>
+               
+                </div>
+                <div class="clear"></div>
+
+                
+
+
+          <article id="manual" style="display: none">
+                <div class="manual_upload_box" style="display: block">
+                  <h3>Upload Contacts Manually - Type ONE contact per line</h3>
+      Only 2 fields are allowed in the manual upload (email, name). Use CSV or Excel upload option for more detailed lists.
+                  <p id="manualId"><textarea name="manualEntry" cols="40" id="list_multi_contacts" required name="list[multi_contacts]" placeholder="Example: developer@emailopened.com, John Doe" rows="8"></textarea>
+                     <h6 id="manualError" style="display:none;color:#ac0000 ">*Please provide atleast one contact</h6>
+                  </p>
+                </div>
+          </article>
+          <article id="fileUpload" style="display: none">
+                <div class="csv_upload_box"  style="display: block">
+                  <h3>Upload CSV File</h3>
+      CSV, XLS and XLSX files are allowed. You will be given the opportunity to select fields in the next stage.
+                  <div class="clear"></div>
+                  <div style="margin: 20px auto 0 auto; clear: both; width: 60%; ">
+                    <div id="FileNameId" class="fileUpload_name" style="border: 1px solid #a1a1a1;">No File..</div>
+                    <div style="width: 45%; float: right;">
+                      <div class="fileUpload medium yellow button">
+                        <span>Upload File</span>
+                        <input class="upload_csv" id="list_document" name="list[document]" type="file" onchange="displayFileName(this)">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+           </article>
+              </div>
+  </div>
+    <div class="cleared"></div>
+  </div>
+ 
+<div class="jedit_bottom_bar">  <div style="width: 100%; text-align: right; padding-top: 10px;">
+  <a href="Createcontacts.html" style="font-size: medium;">Cancel</a> 
+  <input class="fileUpload medium yellow button" name="commit" style="margin-right: 20px; width:12%; font-size: 15px;margin-left: 2%;" type="submit" value="Save List" onclick="addContact()"> 
+</div></div>
+
+</form></div>
+
+<div style="display: none; ">
+
+  <div id="view_help_new" title="Creating a List?">
+    <label id="name_info_wrapper">
+      <div class="message_tips">
+        <h3><font color="#0B0B61">Name</font></h3>
+        <br>
+        Name the List you're about to Create.<br>It is Important to <strong>Give</strong> Lists <strong>Meaningful Names</strong> to keep track of the contacts.
+      </div> 
+    </label>
+    <br>
+    <label id="public_info_wrapper">
+      <div class="message_tips">
+        <h3><font color="#0B0B61">Adding Contacts</font></h3>
+        <br>
+        <strong>Upload :</strong> Upload your contact lists in CSV or Excel formats.<br><br>
+        <strong>Add Manually :</strong> Add 1 Contact per Line with Email and Name separated by a comma.<br>
+        Eg. example@emailopened.com, Bob Opened
+      </div>
+    </label>
+    <br>
+    <label id="public_info_wrapper">
+     
+    </label>
+    <br><a href="#" class="cancel">Close</a>
+  </div>
+</div>
+  <script type="text/javascript">
+
+     function displayFileName(fileName)
+     {
+      var fileName = document.forms["ContactsForm"]["list[document]"].value;
+      FileNameId.innerHTML=fileName;
+
+     }
+
+    function addContact() {
+      
+      var x = document.forms["ContactsForm"]["ListName"].value;
+    if (x == null || x == "") {
+        ListNameId.style.border="thin solid #ac0000";
+ListNameError.style.display='block';
+        
+    }
+    else if(x != null || x != "")
+    {
+      ListNameId.style.border="none";
+      ListNameError.style.display='none';
+    }
+      var y = document.forms["ContactsForm"]["ContactConnection"].value;
+   if (y == null || y == "") {
+       
+ConnectionId.style.border="thin solid #ac0000";
+ConnectionError.style.display='block';
+       
+    }
+     else {
+      ConnectionId.style.border="none";
+      ConnectionError.style.display='none';
+    }
+
+    var z = document.forms["ContactsForm"]["manualEntry"].value;
+ if (z == null || z == "") {
+       
+manualId.style.border="thin solid #ac0000";
+manualError.style.display='block';
+       
+    }
+     else {
+      manualId.style.border="none";
+      manualError.style.display='none';
+    }
+    
+
+    }
+    
+  </script>
+
+      </div>
+    
+    </div>
+       
+
+    </body>
+</html>

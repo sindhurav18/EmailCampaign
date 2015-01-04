@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <title>Email Campaign</title>
+        <link rel="shortcut icon" href="images/icon.jpg"/>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/templatemo_style.css">
+        <link rel="stylesheet" href="css/templatemo_misc.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/testimonails-slider.css">
+
+        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+    </head>
+  
+   <body onload="OnLoad()">
+        
+        <script type="text/javascript">
+function OnLoad() {
+  var mydiv = document.getElementById('dashboard');
+     if(mydiv.style.display == 'block')
+          mydiv.style.display = 'none';
+       else
+          mydiv.style.display = 'block';
+    }
+ 
+</script>
+
+            <header>
+                <div id="top-header">
+                    <div class="container">
+                        <div class="row">
+                           <div class="col-md-6">
+                                
+                            </div>
+                            <div class="col-md-6"> 
+                            <div class="button-like">
+                            <button class="medium green1 buttonSign" type="submit" onclick="location.href('index.html');">SIGN OUT
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="login-form" id="form">
+     <form accept-charset="UTF-8" id="new_session" method="post" novalidate="novalidate"><input name="utf8" type="hidden" value="?">
+               <div class="eo_signup_field">
+                <div class="tag">Email</div>
+                <div class="field"><input id="email" name="email" type="email">
+                </div>
+            </div>
+            <div class="eo_signup_field">
+                    <div class="tag">Password</div>
+                    <div class="field"><input id="password" name="password" type="password">
+                    </div>
+                </div>
+                <div ><button class="eo-button" type="submit" style="margin:10px;text-align: center;">Log In</button></div>
+                </form>
+</div>
+                  <div  id="signup" class="eo_signup_box" style="left: 1090px; top: 104px; position: absolute; z-index: 5000000; display: none;">
+<form accept-charset="UTF-8" action="Sign-Up.html" class="new_company" id="new_company" method="post" novalidate="novalidate">
+  <input name="utf8" type="hidden" value="?"><input name="authenticity_token" type="hidden" value="V+NVZUiXGK+DtNCEw9AMvJzdM0FR4iK/HCtxR0CiXzg="><input id="company_users_attributes_0_referring_url" name="company[users_attributes][0][referring_url]" type="hidden" value="http://www.emailopened.com"><input id="company_users_attributes_0_validated_signup" name="company[users_attributes][0][validated_signup]" type="hidden" value="false"><input id="company_users_attributes_0_referral_token" name="company[users_attributes][0][referral_token]" type="hidden" value="main_site"><input id="company_users_attributes_0_time_zone" name="company[users_attributes][0][time_zone]" type="hidden" value="America/Los_Angeles">
+<div class="eo_signup_field"><div class="tag">Full Name:</div><div class="field"><input id="company_users_attributes_0_name" name="company[users_attributes][0][name]" size="20" type="text"></div></div>
+<div class="eo_signup_field"><div class="tag">Email:</div><div class="field"><input id="company_users_attributes_0_email" name="company[users_attributes][0][email]" size="20" type="text"></div></div><input id="company_plan_id" name="company[plan_id]" type="hidden" value="6">
+<h3 style="font-size: 11px; text-align: center; color: #999999;">By clicking the button below, you agree to Email Opened's <a href="http://www.emailopened.com/tos/" target="_blank" style="font-size: 11px;">Terms of Service</a> &amp; <a href="http://www.emailopened.com/privacy/" target="_blank" style="font-size: 11px;">Privacy Policy</a>.</h3>
+<div class="eo_signup_field"><button class="eo-button" type="submit"><i class="icon-ok"></i> &nbsp; Sign Up</button></div>
+</form>
+</div>
+                <div id="main-header">
+                    <div class="container1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="logo">
+                                    <a href="#"><img src="images/FinalLogo.png" title="Email Campaign" alt="Email Campaign" ></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="main-menu">
+                                    <ul>                                       
+                                      <!-- <li><a href="Home.html">DASHBOARD</a></li>-->
+                                      <!-- <li><a href="#" onclick="DASHBOARD('dashboard')">DASHBOARD</a></li> 
+                                       <li><a href="#" onclick="EMAILS('emails')">EMAILS</a></li>                                      
+                                        <li><a href="#" onclick="toggle_visibility('contacts')">CONTACTS</a></li>
+                                        <li><a href="#" onclick="toggle_visibility('templates')">TEMPLATES</a></li>
+                                        <li><a href="#" onclick="toggle_visibility('signup')">Sign out</a></li>
+                                        -->
+
+                                       <li><a href="#dashboard" class="active">DASHBOARD</a><li>                                
+                                        <li> <a href="#emails">EMAILS</a><li>
+                                       <li> <a href="#contacts">CONTACTS</a><li>
+                                       <li> <a href="#templates">TEMPLATES</a><li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </header>
+ 
+       
+<!--<script type="text/javascript">
+
+    function showFunction(id) {
+       var e = document.getElementById(id);
+          if(e.style.display == 'none')
+          e.style.display = 'block';
+       else
+          e.style.display = 'none';
+    }-->
+          
+
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">  
+</script>
+<script>
+$('a:not(:first)').click(function(e){
+  e.preventDefault()
+  var href = $(this).attr('href')
+  $('article').hide();
+  $(href).show()
+})
+</script>
+<article id="emails">
+   <!-- <div  id="emails" style="display: none;">-->
+
+   <div id="email">
+<p style="color: #FFA500; font-size: 30px; font-weight: normal;">test email</p>
+</div>
+</article>
+<article id="contacts">  
+   <div>
+<div id="top-header">
+                    <div class="container">
+                        <div class="row">
+                           <div class="col-md-6">
+                            <div class="welcome-message">
+                             <h2 >Welcome User..</h2>
+                            </div>    
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                 <div id="latest-blog">
+                <div class="container">
+                        <div class="row">
+                        <div class="col-md-12">
+                         <div class="heading-section">
+                                <h2>Getting Started</h2>                         
+                                <img src="images/under-heading.png" alt="" >
+                                 <br>
+                                <p style="color: #FFA500; font-size: 30px; font-weight: normal;">Manage Your Contacts </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="blog-post">
+                                <div class="blog-thumb">
+
+                                   <p style="text-align:center"><img src="images/blogpost1.jpg" alt="" /></p>
+                                                                  </div>
+                                <div class="blog-content">
+                                    <div class="content-show">
+                                        <h4><a href="contacts.html">Manage Contacts</a></h4>                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                       
+            </div>
+</div>
+</div>
+</div>
+</article>
+<article id="templates">  
+   <div>
+<p style="color: #FFA500; font-size: 30px; font-weight: normal;">test templates</p>
+</div>
+</article>
+
+
+<!--<script type="text/javascript">
+
+    function DASHBOARD(id) {
+       var e = document.getElementById(id);
+         e.style.display = 'block';
+    }
+
+</script>-->
+<article id="dashboard">
+            <div id="dashboard">
+               <div id="top-header">
+                    <div class="container">
+                        <div class="row">
+                           <div class="col-md-6">
+                            <div class="welcome-message">
+                             <h2 >Welcome User..</h2>
+                            </div>    
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                 <div id="latest-blog">
+                <div class="container">
+                        <div class="row">
+                        <div class="col-md-12">
+                         <div class="heading-section">
+                                <h2>Getting Started</h2>                         
+                                <img src="images/under-heading.png" alt="" >
+                                 <br>
+                                <p style="color: #FFA500; font-size: 30px; font-weight: normal;">Welcome to your dashboard!                
+                                   From here you can Manage your Contacts, Choose Templates , Create And Send Emails </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="blog-post">
+                                <div class="blog-thumb">
+                                   <img src="images/blogpost1.jpg" alt="" />
+                                                                  </div>
+                                <div class="blog-content">
+                                    <div class="content-show">
+                                        <h4><a href="contacts.html">Manage Contacts</a></h4>                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="blog-post">
+                                <div class="blog-thumb">
+                                    <img src="images/blogpost2.jpg" alt="" />
+                                </div>
+                                <div class="blog-content">
+                                    <div class="content-show">
+                                        <h4><a href="email.html">Choose Your Template</a></h4>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="blog-post">
+                                <div class="blog-thumb">
+                                    <img src="images/blogpost3.jpg" alt="" />
+                                </div>
+                                <div class="blog-content">
+                                    <div class="content-show">
+                                        <h4><a href="email.html">Draft n Preview Email</a></h4>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+            </div>
+</div>
+</div>
+</div>
+</article>
+           
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script src="js/vendor/jquery.gmap3.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

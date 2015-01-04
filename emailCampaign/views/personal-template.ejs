@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <title>Email Campaign</title>
+        <link rel="shortcut icon" href="images/icon.jpg"/>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/font-awesome.css">
+        <link rel="stylesheet" href="../css/templatemo_style.css">
+        <link rel="stylesheet" href="../css/templatemo_misc.css">
+        <link rel="stylesheet" href="../css/flexslider.css">
+        <link rel="stylesheet" href="../css/testimonails-slider.css">
+        <link rel="stylesheet" href="../css/contacts.css">
+        <link rel="stylesheet" href="../css/emails.css">
+        <script src="../js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+        <style type="text/css">
+	a:hover { text-decoration: none !important; }
+	.header h1 {color: #d7e2c0 !important; font: bold 22px Helvetica, Arial, sans-serif; margin: 0; padding: 0; line-height: 24px;}
+	.header p {color: #8da757; font: normal 16px Helvetica, Arial, sans-serif; margin: 0; padding: 0; line-height: 16px; }
+	
+	.content h2 {color:#51652a !important; font-weight: bold; margin: 0; padding: 0; line-height: 30px; font-size: 17px;font-family: Georgia, serif;}
+	.content p {color:#5e5a4a; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 12px;}
+	.content a {color: #0eb6ce; text-decoration: none;}
+	.footer p {margin: 0; padding: 0; text-align: center;color:#c0c0c0; font-family: Georgia, serif;}
+	.footer a {color: #efe08e; text-decoration: none; border-bottom: 1px dotted #efe08e}
+	.notice p {margin: 0; padding: 0; text-align: center;color:#ffffff; font-family: Georgia, serif;}
+	.notice a {color: #efe08e; text-decoration: none; border-bottom: 1px dotted #efe08e}
+	</style>
+  </head>
+	</head>
+	<body onload="OnLoad()" >
+	<script type="text/javascript">
+function OnLoad() {
+  var mydiv = document.getElementById('dashboard');
+     if(mydiv.style.display == 'block')
+          mydiv.style.display = 'none';
+       else
+          mydiv.style.display = 'block';
+    }
+     function makeVisible(id) {
+          var e = document.getElementById(id);
+           e.style.display = 'block';
+               }
+  
+</script>
+ <header>
+                <div id="top-header">
+                    <div class="container">
+                        <div class="row">
+                           <div class="col-md-6">
+                                
+                            </div>
+                            <div class="col-md-6"> 
+                            <div class="button-like">
+                            <button class="medium green1 buttonSign" type="submit" onclick="window.location='/logout';">SIGN OUT
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                 
+                <div id="main-header">
+                    <div class="container1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="logo">
+                                    <a href="#"><img src="images/FinalLogo.png" title="Email Campaign" alt="Email Campaign" ></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="main-menu">
+                                    <ul>                                       
+                                     
+                                       <li><a href="/Home">DASHBOARD</a><li>                                
+                                        <li> <a href="/email">EMAILS</a><li>
+                                       <li> <a href="/contacts">CONTACTS</a><li>
+                                       <li> <a href="/templates" class="active">TEMPLATES</a><li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </header>
+<div id="main" class="full_width">
+      
+      <div id="yield">
+<div class="header_section" style="background: #D58B28">
+  
+  <h1>Welcome <%=fname%></h1>
+        
+  
+  <div style="clear: both; "></div>
+  
+</div>
+
+
+<div class="page_title">
+<h2>Personal Template</h2>
+ <img src="images/under-heading.png" alt="" >
+<p style="display: block;">Your Trust Is What We Value The Most</p>
+</div>
+<div class="account_section" style="width: 85%; margin: 0 auto; padding-top: 0px;">
+
+<!--Form Starting-->
+<form action="/createEmailPageTemplate" method="post">
+<input type="hidden" id="templateHidden" name="template">
+<input type="hidden" id="selectedIndustry" name"industry">
+<input type="hidden" name="TemplateType" value="1">
+<div id="template">
+<!-- header-->
+
+<!--Header Image-->
+				<div align="center" style="margin: 0; padding: 0; background: #3b4f1a url('../images/bg_email.png') repeat-x center top;" bgcolor="#3b4f1a">
+				<table cellpadding="0" cellspacing="0" border="0" align="center" width="610" style="font-family: Georgia, serif;background: url('../images/bg_header_b2.jpg') no-repeat center top; padding: 5px 0 0" >
+			      	<tr>
+							<td width="20" style="font-size: 0px; "><img src="../images/spacer.gif" alt="space" width="20"></td>
+							<td style="padding: 0px 0 0;" align="left">			
+								<img src="/images/personal-header.jpg" alt="Cow" width="602" style="padding-left: 3px;padding-top:0px;">
+							</td>
+							<td width="25" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="25"></td>
+						</tr>
+			      	<tr>
+						  <td style="font-size: 1px; height: 7px; line-height: 1px;" height="7" colspan="4"><img src="images/spacer.gif" alt="space" width="25" height="1"></td>
+					</tr>
+					<tr>
+					<td width="5" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+			        <td width="599" valign="top" align="left" style="font-family: Georgia, serif; padding-bottom: 55px" bgcolor="#f5f5ee" class="content">
+						<table cellpadding="0" cellspacing="0" border="0"  style="color: #717171; font: normal 11px Georgia, serif; margin: 0; padding: 0;" width="598" >
+						<tr>
+							<td width="20" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="20"></td>
+							<td style="padding: 15px 0 5px; font-family: Georgia, serif;" valign="top" align="left" width="367">
+								<h3 style="color:#736c53; font-weight: bold; text-transform: uppercase; margin: 0; padding: 0; line-height: 10px; font-size: 10px; background: url('images/bg_date.png') repeat-x right top;"><span style="background:#f5f5ee; padding-right: 10px; "><currentdayname> <currentday> <currentmonthname></span></h3>
+							</td>
+							<td width="25" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="25"></td>
+						</tr>
+						<tr>
+							<td width="20" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="20"></td>
+							<td style="padding: 0px 0 0; font-family: Georgia, serif;" align="left">			
+								<input type="text" height="100" placeholder="Look Close - Here's what we have to say (Enter Title Here)" style="color:#51652a; font-weight: bold; margin: 0; padding: 0; line-height: 30px; font-size: 17px;font-family: Georgia, serif;">
+								
+							 </td>
+							<td width="25" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="25"></td>
+						</tr>
+						
+						<tr>
+							<td width="20" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="20"></td>
+							<td style="padding: 10px 0 10px; font-family: Georgia, serif; border-bottom: 1px dashed #cfcdc2" align="left">			
+								<p style="color:#5e5a4a; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 12px;">
+									
+								</p>
+							</td>
+							<td width="25" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="25"></td>
+						</tr>
+						<tr>
+							<td width="20" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="20"></td>
+							<td style="padding: 10px 0 10px; font-family: Georgia, serif;" align="left">			
+								
+							</td>
+							<td width="25" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="25"></td>
+						</tr>
+						<tr>
+							<td width="20" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="20"></td>
+							<td style="padding: 0px 0 0; font-family: Georgia, serif;" align="left">			
+								<textarea cols = "50" rows = "50" placeholder = "Enter Content Here" style = " font-family: Georgia, sarif;font-weight:bold;font-size:17px;"></textarea>
+							</td>
+							
+							<td width="25" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="25"></td>
+						</tr>
+						<tr>
+							<td width="20" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="20"></td>
+							<td style="padding: 8px 0 5px; font-family: Georgia, serif;" align="left">			
+								<p style="color:#5e5a4a; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 12px;">
+									
+								</p>
+							</td>
+							<td width="25" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="25"></td>
+						</tr>
+						<tr>
+							<td width="20" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="20"></td>
+							<td style="padding: 8px 0 10px; font-family: Georgia, serif; border-bottom: 1px dashed #cfcdc2" align="left">			
+								<p style="color:#5e5a4a; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 12px;">
+									
+								</p>
+							</td>
+							<td width="25" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="25"></td>
+						</tr>
+
+						<tr>
+							<td width="20" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="20"></td>
+							<td style="padding: 10px 0 10px; font-family: Georgia, serif;" align="left">			
+								<!-- <h2 style="color:#51652a; font-weight: bold; margin: 0; padding: 0; line-height: 22px; font-size: 17px;">Always wishing the best for you,</h2> -->
+							</td>
+							<td width="25" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="25"></td>
+						</tr>
+						<tr>
+							<td width="20" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="20"></td>
+							<td style="padding: 0px 0 5px; font-family: Georgia, serif;" align="left">			
+								<p style="color:#5e5a4a; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 12px;">
+									<input type="text" placeholder="Footer" name="footer"> <!--Regards-->
+								</p>
+							</td>
+							<td width="25" style="font-size: 1px; line-height: 1px;"><img src="images/spacer.gif" alt="space" width="25"></td>
+						</tr>
+						
+						
+						</table>	
+					</td>
+					
+					
+					<td width="5" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+					
+			      </tr>
+				 <tr>
+					  <td style="font-size: 1px; height: 10px; line-height: 1px;" height="10" colspan="4"><img src="images/spacer.gif" alt="space" width="25" height="1"></td>
+				  </tr>
+				  
+
+				  <input type="submit" value="send" class="medium green1 buttonSign" id="sendToServer">  
+
+				</table><!-- body -->
+				
+		  	</td>
+		</tr>
+    </table>
+        </div>
+        
+    </form>
+
+    
+  </div>
+    <div class="alert-box error" id="errorMessage"><span id="error-span"></span></div>
+	<div class="alert-box success" id="successMessage"><span id="success-span"></span></div>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+	<script>
+	$(function(){
+    $('#sendToServer').click(function () {
+        var mysave = $('#template').html();
+        $('#templateHidden').val(mysave);
+    });
+	});
+    function doTheFinal()
+    {
+    	var ind=$("#selectedInd").val();
+    	var e = document.getElementById("dabox_overlay");
+        e.style.display = 'none';    	
+    	$("#selectedIndustry").val(ind);
+    }
+    
+    
+ 
+	</script>
+
+  </body>
+</html>
